@@ -23,13 +23,8 @@ s.homepage = "https://github.com/awasthi027/api-ios"
 s.source = { :git => "https://github.com/awasthi027/api-ios.git", 
              :tag => "#{s.version}" }
 
-# 7
-#s.framework = "UIKit"
-#s.dependency = "Foundation"
+s.source_files  = "API-iOS/**/*.{h,m,c,swift}"
 
-
-# 8
-s.source_files = "API-iOS/**/*.{swift}"
 
 # 9
 #s.resources = "API-iOS/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
