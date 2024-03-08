@@ -8,7 +8,7 @@ s.summary = "CloudConnect is responsible for connecting to cloud and getting the
 s.requires_arc = true
 
 # 2
-s.version          = ENV['LIB_VERSION'] || '1.0.0' #fallback to major version
+s.version = "1.0.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
