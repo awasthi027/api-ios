@@ -1,0 +1,14 @@
+{
+    "platform": "ios",
+    "build": [
+          {
+            "name": "Publish new Pods",
+            "type": "fastlane",
+            "fastlane": {
+                "lane": "release",
+                "env": "env.ios",
+                "fastlane_repo": "fastlineScripts"
+            }
+        }
+    ]
+}
