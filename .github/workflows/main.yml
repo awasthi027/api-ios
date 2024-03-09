@@ -3,13 +3,13 @@ name: CI
 on: workflow_dispatch
 
 jobs:
-  build: 
+  build:
     name: "Build"
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Deploy to Cocoapods
+      - name: Publish to CocoaPod register
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-        with:
-          config_path: './.github/cd-config.json'
+        run: |
+          fastlane release
