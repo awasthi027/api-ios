@@ -12,7 +12,6 @@ jobs:
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
         run: |
-          bundle install
-          git config --global user.name 'Ashish Awasthi'
+          git config --global user.name 'awasthi027'
           git config --global user.email 'awasthi027@users.noreply.github.com'
           fastlane publicNewPod
