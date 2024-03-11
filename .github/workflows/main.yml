@@ -8,10 +8,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          token: ${{ secrets.PAT_GITHUB }}
       - name: Publish to CocoaPod register
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
         run: |
-          git config --global user.name 'awasthi027'
-          git config --global user.email 'awasthi027@users.noreply.github.com'
           fastlane publicNewPod
