@@ -13,6 +13,7 @@ jobs:
       - name: Publish to CocoaPod register
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_GITHUB }}
         run: |
           bundle install
           git config user.email "myemail.awasthi@gmail.com"
