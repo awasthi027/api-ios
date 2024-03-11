@@ -1,4 +1,4 @@
-name: CI
+name: API-iOS CD
 
 on: workflow_dispatch
 
@@ -8,14 +8,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@main
-        with:
-          token: ${{ secrets.PAT_GITHUB }}
       - name: Publish to CocoaPod register
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.PAT_GITHUB }}
         run: |
           bundle install
-          git config user.email "myemail.awasthi@gmail.com"
-          git config user.name "Github Actions Bot"
           fastlane publicNewPod
