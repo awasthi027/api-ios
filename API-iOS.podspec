@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '15.0'
 s.name = "API-iOS"
-s.summary = "CloudConnect is responsible for connecting to cloud and getting the required info from cloud."
+s.summary = "This framework I have created to test automation flow, First step for automation flow to automatically publish the pod file."
 s.requires_arc = true
 
 # 2
