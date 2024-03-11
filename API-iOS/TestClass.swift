@@ -12,7 +12,7 @@ public class TestClass {
     public init() { /* No Action */}
 
     public func completeName(firstName: String, lastName: String) -> String {
-         debugPrint("Recevied call from outside module")
+        debugPrint("Recevied call from outside module")
         return firstName + lastName
     }
 }

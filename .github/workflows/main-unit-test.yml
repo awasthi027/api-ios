@@ -1,0 +1,33 @@
+name: CI Work flow
+
+on: workflow_dispatch
+
+jobs:
+  TestAndBuild:
+    name: "Checkout source code"
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@main
+        with:
+          token: ${{ secrets.PAT_GITHUB }}
+      - name: List available Xcode versions
+        run: ls /Applications | grep Xcode
+      - name: Set up Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+      - name: Show current version of Xcode
+        run: xcodebuild -version
+      - name: Build Project
+        run: xcodebuild build -project API-iOS.xcodeproj -scheme API_iOSTests -destination 'platform=iOS Simulator,name=iPhone 15'
+      - name: Give Permisson
+        run: chmod 777 .github/workflows/scripts/permissions.sh .github/workflows/scripts/permissions.sh
+      - name: Install Library to show Test Result
+        run: .github/workflows/scripts/pre_test_script.sh
+      - name: Run Tests
+        run: xcodebuild test -project API-iOS.xcodeproj -scheme API_iOSTests -destination 'platform=iOS Simulator,name=iPhone 15' -resultBundlePath TestResults
+      - name: Show Test Result
+        run: .github/workflows/scripts/post_test_script.sh
+      - name: Upload test summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-summary
+          path: index.html
