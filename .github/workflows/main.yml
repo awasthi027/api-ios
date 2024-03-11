@@ -15,4 +15,6 @@ jobs:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
         run: |
           bundle install
+          git config user.email "myemail.awasthi@gmail.com"
+          git config user.name "Github Actions Bot"
           fastlane publicNewPod
