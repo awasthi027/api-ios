@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "A90AC637-3512-47ED-BD3D-9ACE22A710E0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:UITestPOC.xcodeproj",
+      "identifier" : "C881CBF62ADD378F00C2BF26",
+      "name" : "UITestPOC"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:UITestPOC.xcodeproj",
+        "identifier" : "C881CC062ADD379000C2BF26",
+        "name" : "UITestPOCTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:UITestPOC.xcodeproj",
+        "identifier" : "C881CC102ADD379000C2BF26",
+        "name" : "UITestPOCUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
