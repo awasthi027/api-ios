@@ -1,0 +1,25 @@
+name: Run UI Regression tests
+
+on: workflow_dispatch
+
+jobs:
+  CheckoutAndBuild:
+    name: "Checkout source code and Build"
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@main
+        with:
+          token: ${{ secrets.PAT_GITHUB }}
+      - name: Give Permisson
+        run: chmod 777 .github/workflows/scripts/run_ui_tests.sh 
+      - name: List available Xcode versions
+        if: success() || failure()
+        run: .github/workflows/scripts/run_ui_tests.sh
+      - name: Upload test summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-summary
+          path: iOSUITests/index.html
+
+
+        

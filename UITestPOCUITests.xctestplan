@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "1CDB2F25-97B7-4B30-9172-F402F9FFBD19",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "skippedTests" : [
+        "BaseUITestcase",
+        "SafariAppTests",
+        "SafariBaseTestcase",
+        "TerminateAndRelaunchUITests",
+        "TerminateAndRelaunchUITests\/testApplicationTerminateAndRelaunch()"
+      ],
+      "target" : {
+        "containerPath" : "container:UITestPOC.xcodeproj",
+        "identifier" : "C881CC102ADD379000C2BF26",
+        "name" : "UITestPOCUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
