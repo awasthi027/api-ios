@@ -1,0 +1,17 @@
+
+name: Call Reuseable Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+   build:
+    uses: awasthi027/shared-workflow/.github/workflows/reuseableWorkflow.yml@main
+    with:
+      projectName: API-iOS
+      schemaName: API_iOSTests
+      buildScriptDir: iosBuildScripts
+      destinationDir: api-ios
+    secrets:
+      git_token: ${{secrets.PAT_GITHUB}}
+      cocoapods_trunk_token: ${{secrets.COCOAPODS_TRUNK_TOKEN}}
