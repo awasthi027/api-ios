@@ -1,0 +1,58 @@
+name: Prebuild Checks
+run-name: 'Pre-build checks'
+
+on:
+  workflow_call:
+    inputs:
+      config:
+        description: 'Shared Workflow Configuration JSON'
+        required: true
+        type: string
+      repository:
+        description: 'The owner and repository name.'
+        required: false
+        type: string
+        default: ${{ github.repository }}
+      ref:
+        description: 'The fully-formed ref of the branch or tag that triggered the workflow run'
+        required: false
+        type: string
+        default: ${{ github.head_ref || github.ref_name }}
+    outputs:
+      config:
+        description: 'Shared Workflow Configuration JSON'
+        value: ${{ inputs.config }}
+permissions:
+  contents: read
+
+jobs:
+  buildiOS:
+       name: '${{ matrix.build.name }}'
+       runs-on: ${{ matrix.build.runs-on || matrix.common.runs-on }}
+       timeout-minutes: ${{ matrix.build.timeout-minutes || matrix.common.timeout-minutes || 180 }}
+       if: ${{ fromJson(inputs.config).platform == 'ios' && fromJson(inputs.config).build }}
+       steps:
+
+        - run: |
+           echo ${{fromJson(inputs.config).build.fastlane.working_repo}}
+
+# jobs:
+#   buildiOS:
+#      name: '${{ matrix.build.name }}'
+#      timeout-minutes: ${{ matrix.build.timeout-minutes || matrix.common.timeout-minutes || 180 }}
+#      runs-on: ${{ matrix.build.runs-on || matrix.common.runs-on }}
+#      if: ${{ fromJson(inputs.config).platform == 'ios' && fromJson(inputs.config).build }}
+#      strategy:
+#        fail-fast: false
+#        matrix:
+#          build: ${{ fromJson(inputs.config).build }}
+#          common: ${{ fromJson(inputs.config).common }}
+#       steps:
+#         - name: Build Source Code
+#           uses: awasthi027/fastlane-action@v4
+#           with:
+#             working_repo: ${{matrix.build.fastlane.working_repo }}
+#             fastlane_repo: ${{ matrix.build.fastlane.fastlane_repo }}
+#             lane_name: ${{ matrix.build.build.fastlane.lane  }}
+#             env_name: ${{ matrix.build.fastlane.env  }}
+#             gitPATToken: ${{ secrets.git_token }}

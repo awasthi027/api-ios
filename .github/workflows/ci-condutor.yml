@@ -13,24 +13,90 @@ permissions:
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - '**'
-  #   tags-ignore:
-  #     - '**'
-  #   paths-ignore:
-  #     - "**.podspec"
-  # schedule:
-  #   - cron: '0 1 * * 1' # This cron expression means "At 01:00 on Monday"
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+    paths-ignore:
+      - "**.podspec"
+  schedule:
+    - cron: '0 1 * * 1' # This cron expression means "At 01:00 on Monday"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: ${{ github.ref_name != 'development' }}
 
 jobs:
-    PodLibLint:
-      name: 'Pod Lib Lint'
-      uses: awasthi027/shared-workflow/.github/workflows/ci-pr.yml@main
-      with:
-        config_path: './.github/ci-configuration/ci.json'
-      secrets: inherit
+  prepare:
+     name: '🌱 Seed Workflow Config 🌱'
+     runs-on: [macos-latest]
+     outputs:
+      matrix: ${{ steps.readjson.outputs }}
+     steps:
+
+      - name: Checkout Project Repository
+        uses: actions/checkout@main
+        with:
+          repository: ${{ inputs.repository }}
+          ref: ${{ inputs.ref }}
+          token: ${{ secrets.PAT_GITHUB }}
+
+      - name: Validate Build Configuration
+        id: readjson
+        uses: RadovanPelka/github-action-json@main
+        with: 
+          path: './.github/ci-configuration/ci.json'
+      - run: echo "name - ${{ steps.readjson.outputs.build }}"
+      - run: echo "fastlane - ${{ steps.readjson.outputs.common }}"
+     
+  job2:
+    name: '🌱 Reading JSON 🌱'
+    needs: [prepare]
+    runs-on: [macos-latest]
+    strategy:
+        matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
+    steps:
+    - run: echo ${{ matrix.platform }}
+    - run: echo ${{ matrix.build }}
+
+  # call-build:
+  #   name: 'Build'
+  #   needs: [prepare]
+  #   uses: ./.github/workflows/main-prebuild.yml
+  #   with:
+  #     config: ${{ needs.prepare.outputs.matrix }}
+  #     repository: ${{ inputs.repository }}
+  #     ref: ${{ inputs.ref }}
+  #   secrets: inherit
+
+# jobs:
+#     PodLibLint:
+#       name: 'Pod Lib Lint'
+#       uses: ./.github/workflows/ci-pr.yml
+#       with:
+#         config_path: './.github/ci-configuration/ci.json'
+#       secrets: inherit
+
+
+
+
+
+
+# jobs:
+#   job1:
+#     runs-on: [macos-latest]
+#     outputs:
+#       matrix: ${{ steps.set-matrix.outputs.matrix }}
+#     steps:
+#     - id: set-matrix
+#       run: echo "::set-output name=matrix::{\"include\":[{\"project\":\"foo\",\"config\":\"Debug\", \"build\":{\"projectKey\":\"Ashish=======\",\"testKey\":\"test\"}},{\"project\":\"bar\",\"config\":\"Release\"}]}"
+#   job2:
+#     needs: job1
+#     runs-on: [macos-latest]
+#     strategy:
+#       matrix: ${{fromJson(needs.job1.outputs.matrix)}}
+#     steps:
+#     - run: echo ${{ matrix.project }}
+#     - run: echo ${{ matrix.config }}
+#     - run: echo ${{ matrix.build.projectKey}}
