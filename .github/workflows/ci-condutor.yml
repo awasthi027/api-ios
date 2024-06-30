@@ -28,11 +28,11 @@ concurrency:
   cancel-in-progress: ${{ github.ref_name != 'development' }}
 
 jobs:
-  prepare:
+  job1:
      name: '🌱 Seed Workflow Config 🌱'
-     runs-on: [macos-latest]
+     runs-on: macos-latest
      outputs:
-      matrix: ${{ steps.readjson.outputs }}
+      matrix: ${{ steps.readjson.outputs.config-content.build }}
      steps:
 
       - name: Checkout Project Repository
@@ -44,21 +44,17 @@ jobs:
 
       - name: Validate Build Configuration
         id: readjson
-        uses: RadovanPelka/github-action-json@main
+        uses: awasthi027/validate-workflow-config-action@v1
         with: 
-          path: './.github/ci-configuration/ci.json'
-      - run: echo "name - ${{ steps.readjson.outputs.build }}"
-      - run: echo "fastlane - ${{ steps.readjson.outputs.common }}"
-     
+          config-path: './.github/ci-configuration/ci.json'
   job2:
-    name: '🌱 Reading JSON 🌱'
-    needs: [prepare]
-    runs-on: [macos-latest]
+    needs: [job1]
+    runs-on: macos-latest
     strategy:
         matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
     steps:
-    - run: echo ${{ matrix.platform }}
-    - run: echo ${{ matrix.build }}
+    - run: echo ${{ matrix.fastlane }}
+    - run: echo ${{ matrix.type }}
 
   # call-build:
   #   name: 'Build'

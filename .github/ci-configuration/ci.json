@@ -2,7 +2,10 @@
     "platform": "ios",
     "common": [
         {
-            "runs-on": ["macos-latest"]
+            "runs-on": ["self-hosted", "macbuildp-atl"],
+            "checkout": {
+                "path": "./project"
+            }
         }
     ],
     "build": [
@@ -12,9 +15,9 @@
             "fastlane": {
                 "lane": "podLibLint",
                 "env": "env",
-                "fastlane_repo": "awasthi027/iosBuildScripts",
-                "working_repo": "./"
+                "fastlane_repo": "euc-uem/ws1sdkbuild-ios-script"
             }
         }
     ]
 }
+
