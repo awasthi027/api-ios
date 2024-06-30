@@ -29,3 +29,13 @@ jobs:
         #   secrets:
         #     git_token: ${{secrets.PAT_GITHUB}}
         #     cocoapods_trunk_token: ${{secrets.COCOAPODS_TRUNK_TOKEN}}
+
+   # CIJobs:
+   #   name: 'Buld Source Code'
+   #   uses: awasthi027/shared-workflow/.github/workflows/reuseableWorkflow.yml@main
+   #   with:
+   #     config_path: './.github/configuration/ci.json'
+   #     config: ${{ needs.prepare.outputs.matrix }}
+   #   secrets:
+   #     git_token: ${{secrets.PAT_GITHUB}}
+   #     cocoapods_trunk_token: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
