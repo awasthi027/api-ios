@@ -28,7 +28,7 @@ concurrency:
   cancel-in-progress: ${{ github.ref_name != 'development' }}
 
 jobs:
-  job1:
+  prepare:
      name: '🌱 Seed Workflow Config 🌱'
      runs-on: macos-latest
      outputs:
@@ -40,63 +40,19 @@ jobs:
         with:
           repository: ${{ inputs.repository }}
           ref: ${{ inputs.ref }}
-          token: ${{ secrets.PAT_GITHUB }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Validate Build Configuration
         id: readjson
         uses: awasthi027/validate-workflow-config-action@v1
         with: 
           config-path: './.github/ci-configuration/ci.json'
-  job2:
-    needs: [job1]
-    runs-on: macos-latest
-    strategy:
-        fail-fast: false
-        matrix: 
-          build: ${{ fromJson(needs.job1.outputs.matrix).build }}
-          common: ${{ fromJson(needs.job1.outputs.matrix).common }}
-
-    steps:
-    - run: echo ${{ matrix.fastlane }}
-    - run: echo ${{ matrix.type }}
-
-  # call-build:
-  #   name: 'Build'
-  #   needs: [prepare]
-  #   uses: ./.github/workflows/main-prebuild.yml
-  #   with:
-  #     config: ${{ needs.prepare.outputs.matrix }}
-  #     repository: ${{ inputs.repository }}
-  #     ref: ${{ inputs.ref }}
-  #   secrets: inherit
-
-# jobs:
-#     PodLibLint:
-#       name: 'Pod Lib Lint'
-#       uses: ./.github/workflows/ci-pr.yml
-#       with:
-#         config_path: './.github/ci-configuration/ci.json'
-#       secrets: inherit
-
-
-
-
-
-
-# jobs:
-#   job1:
-#     runs-on: [macos-latest]
-#     outputs:
-#       matrix: ${{ steps.set-matrix.outputs.matrix }}
-#     steps:
-#     - id: set-matrix
-#       run: echo "::set-output name=matrix::{\"include\":[{\"project\":\"foo\",\"config\":\"Debug\", \"build\":{\"projectKey\":\"Ashish=======\",\"testKey\":\"test\"}},{\"project\":\"bar\",\"config\":\"Release\"}]}"
-#   job2:
-#     needs: job1
-#     runs-on: [macos-latest]
-#     strategy:
-#       matrix: ${{fromJson(needs.job1.outputs.matrix)}}
-#     steps:
-#     - run: echo ${{ matrix.project }}
-#     - run: echo ${{ matrix.config }}
-#     - run: echo ${{ matrix.build.projectKey}}
+  build-iOS: 
+     name: "Buidling iOS source code"
+     needs: [prepare]
+     uses: awasthi027/shared-workflow/.github/workflows/ci-pr.yml
+     with: 
+       config_path: './.github/ci-configuration/ci.json' # Not using it, Config should read in cr-pr.yml, But not working missing file something error
+       config: ${{needs.prepare.outputs.matrix }}
+     secrets: inherit
+  
