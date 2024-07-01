@@ -8,7 +8,29 @@
             }
         }
     ],
+
     "build": [
+        {
+            "name": "Build Source Code",
+            "type": "fastlane",
+            "fastlane": {
+                "lane": "buildiOSSource",
+                "working_repo": "./",
+                "fastlane_repo": "awasthi027/iosBuildScripts"
+            }
+        }
+    ],
+
+    "test": [
+        {
+            "name": "Test Source Code",
+            "type": "fastlane",
+            "fastlane": {
+                "lane": "testiOSSource",
+                "working_repo": "./",
+                "fastlane_repo": "awasthi027/iosBuildScripts"
+            }
+        },
         {
             "name": "Pod Lib Lint",
             "type": "fastlane",

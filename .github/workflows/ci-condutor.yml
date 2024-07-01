@@ -28,31 +28,10 @@ concurrency:
   cancel-in-progress: ${{ github.ref_name != 'development' }}
 
 jobs:
-  prepare:
-     name: '🌱 Seed Workflow Config 🌱'
-     runs-on: macos-latest
-     outputs:
-      matrix: ${{ steps.readjson.outputs.config-content }}
-     steps:
-
-      - name: Checkout Project Repository
-        uses: actions/checkout@main
-        with:
-          repository: ${{ inputs.repository }}
-          ref: ${{ inputs.ref }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Validate Build Configuration
-        id: readjson
-        uses: awasthi027/validate-workflow-config-action@v1
-        with: 
-          config-path: './.github/ci-configuration/ci.json'
   build-iOS: 
-     name: "Buidling iOS source code"
-     needs: [prepare]
+     name: "CI Jobs"
      uses: awasthi027/shared-workflow/.github/workflows/ci-pr.yml@main
      with: 
-       config_path: './.github/ci-configuration/ci.json' # Not using it, Config should read in cr-pr.yml, But not working missing file something error
-       config: ${{needs.prepare.outputs.matrix }}
+       config_path: './.github/ci-configuration/ci.json'
      secrets: inherit
   
