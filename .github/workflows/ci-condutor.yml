@@ -32,7 +32,7 @@ jobs:
      name: '🌱 Seed Workflow Config 🌱'
      runs-on: macos-latest
      outputs:
-      matrix: ${{ steps.readjson.outputs.config-content.build }}
+      matrix: ${{ steps.readjson.outputs.config-content }}
      steps:
 
       - name: Checkout Project Repository
@@ -51,7 +51,11 @@ jobs:
     needs: [job1]
     runs-on: macos-latest
     strategy:
-        matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
+        fail-fast: false
+        matrix: 
+          build: ${{ fromJson(needs.job1.outputs.matrix).build }}
+          common: ${{ fromJson(needs.job1.outputs.matrix).common }}
+
     steps:
     - run: echo ${{ matrix.fastlane }}
     - run: echo ${{ matrix.type }}
