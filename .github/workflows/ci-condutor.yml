@@ -50,7 +50,7 @@ jobs:
   build-iOS: 
      name: "Buidling iOS source code"
      needs: [prepare]
-     uses: awasthi027/shared-workflow/.github/workflows/ci-pr.yml
+     uses: awasthi027/shared-workflow/.github/workflows/ci-pr.yml@main
      with: 
        config_path: './.github/ci-configuration/ci.json' # Not using it, Config should read in cr-pr.yml, But not working missing file something error
        config: ${{needs.prepare.outputs.matrix }}
