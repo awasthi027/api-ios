@@ -7,7 +7,7 @@ env:
     GITHUB_BUILD_BRANCH: ${{ github.ref_name }}
 
 permissions:
-  contents: read
+  contents: write # To push a branch or create tag
   actions: read
   checks: write
 
