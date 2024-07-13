@@ -2,7 +2,7 @@
     "platform": "ios",
     "common": [
         {
-            "runs-on": ["macos-latest"],
+            "runs-on": ["self-hosted"],
             "checkout": {
                 "path": "./"
             }
