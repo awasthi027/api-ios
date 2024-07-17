@@ -18,6 +18,15 @@
                 "working_repo": "./",
                 "fastlane_repo": "awasthi027/iosBuildScripts"
             }
+        },
+          {
+            "name": "Publishing SPM",
+            "type": "fastlane",
+            "fastlane": {
+                "lane": "publishSPM",
+                "working_repo": "./",
+                "fastlane_repo": "awasthi027/iosBuildScripts"
+            }
         }
     ]
 }
