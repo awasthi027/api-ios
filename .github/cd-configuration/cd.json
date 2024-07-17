@@ -12,6 +12,7 @@
     "publish": [
         {
             "name": "Publishing PodSpec",
+            "disabled": true,
             "type": "fastlane",
             "fastlane": {
                 "lane": "publishNewPodSpec",
