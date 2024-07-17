@@ -13,8 +13,19 @@
         {
             "name": "Publishing PodSpec",
             "type": "fastlane",
+             "disabled": true,
             "fastlane": {
                 "lane": "publishNewPodSpec",
+                "working_repo": "./",
+                "fastlane_repo": "awasthi027/iosBuildScripts"
+            }
+        },
+        {
+            "name": "Publishing PodSpec",
+            "type": "fastlane",
+             "disabled": true,
+            "fastlane": {
+                "lane": "publishSPM",
                 "working_repo": "./",
                 "fastlane_repo": "awasthi027/iosBuildScripts"
             }
