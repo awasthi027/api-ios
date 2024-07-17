@@ -33,6 +33,7 @@
 		C89C1F6A2B99A3EA00305A02 /* API_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API_iOS.h; sourceTree = "<group>"; };
 		C89C1F6B2B99A3EA00305A02 /* API_iOS.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = API_iOS.docc; sourceTree = "<group>"; };
 		C89C1F812B99A3F800305A02 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		C8DA69CA2C47F66200B01A7A /* API-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "API-iOSTests-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		C8651E712C0B13D600679D42 /* API_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				C8DA69CA2C47F66200B01A7A /* API-iOSTests-Info.plist */,
 				C8651E722C0B13D600679D42 /* API_iOSTests.swift */,
 				C8651E7A2C0B140100679D42 /* TestClassTests.swift */,
 			);
@@ -232,8 +234,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VL795556B;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "API-iOSTests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "test.SwiftUISDKExampleApp.API-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -249,8 +253,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9VL795556B;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "API-iOSTests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "test.SwiftUISDKExampleApp.API-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -404,7 +410,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.10;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ashi.vmware.API-iOS";
@@ -437,7 +443,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.10;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ashi.vmware.API-iOS";
