@@ -51,6 +51,12 @@ xcodebuild archive \
 -sdk iphoneos -arch arm64 \
  SKIP_INSTALL=$skip_install \
  BUILD_LIBRARIES_FOR_DISTRIBUTION=$build_library_for_distribution
+ STRIP_STYLE=non-global \
+ STRIP_INSTALLED_PRODUCT=YES \
+ CODE_SIGN_IDENTITY="" \
+ CODE_SIGNING_REQUIRED=NO \
+ CODE_SIGN_ENTITLEMENTS="" \
+ CODE_SIGNING_ALLOWED=NO
 
 echo "Replaceing - with _ Because command creating framework Like this API_iOS.framework\
  Remove below schema doesn't contain -"
