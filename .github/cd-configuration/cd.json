@@ -21,11 +21,20 @@
             }
         },
         {
-            "name": "Publishing PodSpec",
+            "name": "Publishing Swift Package Manager",
             "type": "fastlane",
              "disabled": true,
             "fastlane": {
                 "lane": "publishSPM",
+                "working_repo": "./",
+                "fastlane_repo": "awasthi027/iosBuildScripts"
+            }
+        },
+         {
+            "name": "Creating XCFramework",
+            "type": "fastlane",
+            "fastlane": {
+                "lane": "createXCFramework",
                 "working_repo": "./",
                 "fastlane_repo": "awasthi027/iosBuildScripts"
             }
