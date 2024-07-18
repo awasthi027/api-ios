@@ -77,3 +77,19 @@ xcodebuild -create-xcframework \
 -output $xcframework_path
 
 echo "$scheme_name.xcframework has been generated at path: $xcframework_path"
+
+echo "Zip framework folders"
+
+cd builds
+echo "Current Directory"
+pwd 
+echo "Directory Content"
+ls 
+echo "Create Zip file"
+
+zip -r ./$scheme_name.zip ./$scheme_name.xcframework
+
+
+
+
+
