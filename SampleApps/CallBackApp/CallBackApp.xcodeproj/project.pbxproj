@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C81A4D2E2A4D5FD30040847C /* CallBackAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81A4D2D2A4D5FD30040847C /* CallBackAppApp.swift */; };
+		C81A4D302A4D5FD30040847C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81A4D2F2A4D5FD30040847C /* ContentView.swift */; };
+		C81A4D322A4D5FD50040847C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81A4D312A4D5FD50040847C /* Assets.xcassets */; };
+		C81A4D352A4D5FD50040847C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81A4D342A4D5FD50040847C /* Preview Assets.xcassets */; };
+		C81A4D3F2A4D5FD50040847C /* CallBackAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81A4D3E2A4D5FD50040847C /* CallBackAppTests.swift */; };
+		C81A4D492A4D5FD50040847C /* CallBackAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81A4D482A4D5FD50040847C /* CallBackAppUITests.swift */; };
+		C81A4D4B2A4D5FD50040847C /* CallBackAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81A4D4A2A4D5FD50040847C /* CallBackAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C81A4D3B2A4D5FD50040847C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81A4D222A4D5FD30040847C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C81A4D292A4D5FD30040847C;
+			remoteInfo = CallBackApp;
+		};
+		C81A4D452A4D5FD50040847C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81A4D222A4D5FD30040847C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C81A4D292A4D5FD30040847C;
+			remoteInfo = CallBackApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C81A4D2A2A4D5FD30040847C /* CallBackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81A4D2D2A4D5FD30040847C /* CallBackAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallBackAppApp.swift; sourceTree = "<group>"; };
+		C81A4D2F2A4D5FD30040847C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C81A4D312A4D5FD50040847C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C81A4D342A4D5FD50040847C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C81A4D3A2A4D5FD50040847C /* CallBackAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallBackAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81A4D3E2A4D5FD50040847C /* CallBackAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallBackAppTests.swift; sourceTree = "<group>"; };
+		C81A4D442A4D5FD50040847C /* CallBackAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallBackAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81A4D482A4D5FD50040847C /* CallBackAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallBackAppUITests.swift; sourceTree = "<group>"; };
+		C81A4D4A2A4D5FD50040847C /* CallBackAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallBackAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C81A4D272A4D5FD30040847C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81A4D372A4D5FD50040847C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81A4D412A4D5FD50040847C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C81A4D212A4D5FD30040847C = {
+			isa = PBXGroup;
+			children = (
+				C81A4D2C2A4D5FD30040847C /* CallBackApp */,
+				C81A4D3D2A4D5FD50040847C /* CallBackAppTests */,
+				C81A4D472A4D5FD50040847C /* CallBackAppUITests */,
+				C81A4D2B2A4D5FD30040847C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C81A4D2B2A4D5FD30040847C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C81A4D2A2A4D5FD30040847C /* CallBackApp.app */,
+				C81A4D3A2A4D5FD50040847C /* CallBackAppTests.xctest */,
+				C81A4D442A4D5FD50040847C /* CallBackAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C81A4D2C2A4D5FD30040847C /* CallBackApp */ = {
+			isa = PBXGroup;
+			children = (
+				C81A4D2D2A4D5FD30040847C /* CallBackAppApp.swift */,
+				C81A4D2F2A4D5FD30040847C /* ContentView.swift */,
+				C81A4D312A4D5FD50040847C /* Assets.xcassets */,
+				C81A4D332A4D5FD50040847C /* Preview Content */,
+			);
+			path = CallBackApp;
+			sourceTree = "<group>";
+		};
+		C81A4D332A4D5FD50040847C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C81A4D342A4D5FD50040847C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C81A4D3D2A4D5FD50040847C /* CallBackAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C81A4D3E2A4D5FD50040847C /* CallBackAppTests.swift */,
+			);
+			path = CallBackAppTests;
+			sourceTree = "<group>";
+		};
+		C81A4D472A4D5FD50040847C /* CallBackAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C81A4D482A4D5FD50040847C /* CallBackAppUITests.swift */,
+				C81A4D4A2A4D5FD50040847C /* CallBackAppUITestsLaunchTests.swift */,
+			);
+			path = CallBackAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C81A4D292A4D5FD30040847C /* CallBackApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81A4D4E2A4D5FD50040847C /* Build configuration list for PBXNativeTarget "CallBackApp" */;
+			buildPhases = (
+				C81A4D262A4D5FD30040847C /* Sources */,
+				C81A4D272A4D5FD30040847C /* Frameworks */,
+				C81A4D282A4D5FD30040847C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallBackApp;
+			productName = CallBackApp;
+			productReference = C81A4D2A2A4D5FD30040847C /* CallBackApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C81A4D392A4D5FD50040847C /* CallBackAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81A4D512A4D5FD50040847C /* Build configuration list for PBXNativeTarget "CallBackAppTests" */;
+			buildPhases = (
+				C81A4D362A4D5FD50040847C /* Sources */,
+				C81A4D372A4D5FD50040847C /* Frameworks */,
+				C81A4D382A4D5FD50040847C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C81A4D3C2A4D5FD50040847C /* PBXTargetDependency */,
+			);
+			name = CallBackAppTests;
+			productName = CallBackAppTests;
+			productReference = C81A4D3A2A4D5FD50040847C /* CallBackAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C81A4D432A4D5FD50040847C /* CallBackAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81A4D542A4D5FD50040847C /* Build configuration list for PBXNativeTarget "CallBackAppUITests" */;
+			buildPhases = (
+				C81A4D402A4D5FD50040847C /* Sources */,
+				C81A4D412A4D5FD50040847C /* Frameworks */,
+				C81A4D422A4D5FD50040847C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C81A4D462A4D5FD50040847C /* PBXTargetDependency */,
+			);
+			name = CallBackAppUITests;
+			productName = CallBackAppUITests;
+			productReference = C81A4D442A4D5FD50040847C /* CallBackAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C81A4D222A4D5FD30040847C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C81A4D292A4D5FD30040847C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C81A4D392A4D5FD50040847C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C81A4D292A4D5FD30040847C;
+					};
+					C81A4D432A4D5FD50040847C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C81A4D292A4D5FD30040847C;
+					};
+				};
+			};
+			buildConfigurationList = C81A4D252A4D5FD30040847C /* Build configuration list for PBXProject "CallBackApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C81A4D212A4D5FD30040847C;
+			productRefGroup = C81A4D2B2A4D5FD30040847C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C81A4D292A4D5FD30040847C /* CallBackApp */,
+				C81A4D392A4D5FD50040847C /* CallBackAppTests */,
+				C81A4D432A4D5FD50040847C /* CallBackAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C81A4D282A4D5FD30040847C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81A4D352A4D5FD50040847C /* Preview Assets.xcassets in Resources */,
+				C81A4D322A4D5FD50040847C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81A4D382A4D5FD50040847C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81A4D422A4D5FD50040847C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C81A4D262A4D5FD30040847C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81A4D302A4D5FD30040847C /* ContentView.swift in Sources */,
+				C81A4D2E2A4D5FD30040847C /* CallBackAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81A4D362A4D5FD50040847C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81A4D3F2A4D5FD50040847C /* CallBackAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81A4D402A4D5FD50040847C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81A4D492A4D5FD50040847C /* CallBackAppUITests.swift in Sources */,
+				C81A4D4B2A4D5FD50040847C /* CallBackAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C81A4D3C2A4D5FD50040847C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C81A4D292A4D5FD30040847C /* CallBackApp */;
+			targetProxy = C81A4D3B2A4D5FD50040847C /* PBXContainerItemProxy */;
+		};
+		C81A4D462A4D5FD50040847C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C81A4D292A4D5FD30040847C /* CallBackApp */;
+			targetProxy = C81A4D452A4D5FD50040847C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C81A4D4C2A4D5FD50040847C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C81A4D4D2A4D5FD50040847C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C81A4D4F2A4D5FD50040847C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CallBackApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VL795556B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashi.vmware.CallBackApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C81A4D502A4D5FD50040847C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CallBackApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9VL795556B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashi.vmware.CallBackApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C81A4D522A4D5FD50040847C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VL795556B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashi.vmware.CallBackAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallBackApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CallBackApp";
+			};
+			name = Debug;
+		};
+		C81A4D532A4D5FD50040847C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VL795556B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashi.vmware.CallBackAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallBackApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CallBackApp";
+			};
+			name = Release;
+		};
+		C81A4D552A4D5FD50040847C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VL795556B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashi.vmware.CallBackAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CallBackApp;
+			};
+			name = Debug;
+		};
+		C81A4D562A4D5FD50040847C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9VL795556B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashi.vmware.CallBackAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CallBackApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C81A4D252A4D5FD30040847C /* Build configuration list for PBXProject "CallBackApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81A4D4C2A4D5FD50040847C /* Debug */,
+				C81A4D4D2A4D5FD50040847C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C81A4D4E2A4D5FD50040847C /* Build configuration list for PBXNativeTarget "CallBackApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81A4D4F2A4D5FD50040847C /* Debug */,
+				C81A4D502A4D5FD50040847C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C81A4D512A4D5FD50040847C /* Build configuration list for PBXNativeTarget "CallBackAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81A4D522A4D5FD50040847C /* Debug */,
+				C81A4D532A4D5FD50040847C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C81A4D542A4D5FD50040847C /* Build configuration list for PBXNativeTarget "CallBackAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C81A4D552A4D5FD50040847C /* Debug */,
+				C81A4D562A4D5FD50040847C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C81A4D222A4D5FD30040847C /* Project object */;
+}
