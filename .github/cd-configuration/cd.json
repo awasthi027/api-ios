@@ -33,6 +33,8 @@
          {
             "name": "Creating XCFramework",
             "type": "fastlane",
+            "upload": true,
+            "frameworkPath": "./builds/API_iOS.zip"
             "fastlane": {
                 "lane": "createXCFramework",
                 "working_repo": "./",
