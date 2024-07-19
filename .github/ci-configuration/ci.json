@@ -22,6 +22,15 @@
     ],
 
     "test": [
+          {
+            "name": "Print Message Job",
+            "type": "fastlane",
+            "fastlane": {
+                "lane": "printMessageLane",
+                "working_repo": "./",
+                "fastlane_repo": "awasthi027/iosBuildScripts"
+            }
+        },
         {
             "name": "Test Source Code",
             "type": "fastlane",
@@ -34,8 +43,8 @@
         },
         {
             "name": "Pod Lib Lint",
-            "type": "fastlane",
             "disabled": true,
+            "type": "fastlane",
             "fastlane": {
                 "lane": "podLibLint",
                 "working_repo": "./",
