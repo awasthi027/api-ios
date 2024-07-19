@@ -89,7 +89,13 @@ echo "Create Zip file"
 
 zip -r ./$scheme_name.zip ./$scheme_name.xcframework
 
+cd ..
 
+echo "Printing contents of directory"
+for entry in builds/*
+do
+  echo "$entry"
+done #
 
 
 

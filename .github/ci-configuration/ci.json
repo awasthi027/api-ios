@@ -35,7 +35,6 @@
         {
             "name": "Pod Lib Lint",
             "type": "fastlane",
-            "disabled": true,
             "fastlane": {
                 "lane": "podLibLint",
                 "working_repo": "./",
