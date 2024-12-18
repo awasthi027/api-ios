@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import API_iOS
+@testable import api_ios
 
 final class TestClassTests: XCTestCase {
 

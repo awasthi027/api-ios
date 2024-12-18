@@ -1,18 +1,18 @@
 //
-//  API_iOS.h
-//  API-iOS
+//  api_ios.h
+//  api-ios
 //
-//  Created by Ashish Awasthi on 07/03/24.
+//  Created by Ashish Awasthi on 18/12/24.
 //
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for API_iOS.
-FOUNDATION_EXPORT double API_iOSVersionNumber;
+//! Project version number for api_ios.
+FOUNDATION_EXPORT double api_iosVersionNumber;
 
-//! Project version string for API_iOS.
-FOUNDATION_EXPORT const unsigned char API_iOSVersionString[];
+//! Project version string for api_ios.
+FOUNDATION_EXPORT const unsigned char api_iosVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <API_iOS/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <api_ios/PublicHeader.h>
 
 
