@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import API_iOS
+import api_ios
 
 @main
 struct TestAppApp: App {

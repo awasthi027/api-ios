@@ -1,16 +1,16 @@
 PODS:
-  - API-iOS (1.0.6)
+  - api-ios (2.0.0)
 
 DEPENDENCIES:
-  - API-iOS
+  - api-ios
 
 SPEC REPOS:
-  trunk:
-    - API-iOS
+  https://github.com/awasthi027/ios-spec.git:
+    - api-ios
 
 SPEC CHECKSUMS:
-  API-iOS: ada57b49a449145021db53cb744f871c434790c0
+  api-ios: f99f3f594d0a6b609e3971df8c0723e59b828190
 
-PODFILE CHECKSUM: 309b8779825f120d7104bd40eca924be4e1d194d
+PODFILE CHECKSUM: 1c7fc5a9d830a7955d31ea684fbeb1ec5c53f8be
 
 COCOAPODS: 1.16.2
