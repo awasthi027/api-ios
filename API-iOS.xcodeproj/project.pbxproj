@@ -26,22 +26,9 @@
 		EB92B92B42C60E7915F4783E /* Pods_api_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_api_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		95388B422D12ECC800B4481E /* Exceptions for "api-ios" folder in "api-ios" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				api_ios.h,
-			);
-			target = 95388B2F2D12ECC800B4481E /* api-ios */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		95388B322D12ECC800B4481E /* api-ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				95388B422D12ECC800B4481E /* Exceptions for "api-ios" folder in "api-ios" target */,
-			);
 			path = "api-ios";
 			sourceTree = "<group>";
 		};

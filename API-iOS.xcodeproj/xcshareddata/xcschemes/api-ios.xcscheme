@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1540"
+   LastUpgradeVersion = "1620"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,24 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C89C1F662B99A3EA00305A02"
-               BuildableName = "API_iOS.framework"
-               BlueprintName = "API-iOS"
-               ReferencedContainer = "container:API-iOS.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8651E6F2C0B13D600679D42"
-               BuildableName = "API_iOSTests.xctest"
-               BlueprintName = "API_iOSTests"
-               ReferencedContainer = "container:API-iOS.xcodeproj">
+               BlueprintIdentifier = "95388B2F2D12ECC800B4481E"
+               BuildableName = "api_ios.framework"
+               BlueprintName = "api-ios"
+               ReferencedContainer = "container:api-ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -43,6 +29,19 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "95388B392D12ECC800B4481E"
+               BuildableName = "api-iosTests.xctest"
+               BlueprintName = "api-iosTests"
+               ReferencedContainer = "container:api-ios.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -64,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C89C1F662B99A3EA00305A02"
-            BuildableName = "API_iOS.framework"
-            BlueprintName = "API-iOS"
-            ReferencedContainer = "container:API-iOS.xcodeproj">
+            BlueprintIdentifier = "95388B2F2D12ECC800B4481E"
+            BuildableName = "api_ios.framework"
+            BlueprintName = "api-ios"
+            ReferencedContainer = "container:api-ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

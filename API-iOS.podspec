@@ -2,13 +2,13 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '15.0'
-s.name = "API-iOS"
+s.ios.deployment_target = '16.0'
+s.name = "api-ios"
 s.summary = "This framework I have created to test automation flow, First step for automation flow to automatically publish the pod file."
 s.requires_arc = true
 
 # 2
-s.version = "1.0.9"
+s.version = "2.0.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }

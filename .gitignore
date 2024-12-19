@@ -9,6 +9,8 @@ xcuserdata/
 xcuserdata/
 project.xcworkspace/
 DerivedData/
+xcuserdata/
+project.xcproject/
 
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)

@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1540"
-   version = "2.2">
+   LastUpgradeVersion = "1620"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <AutocreatedTestPlanReference>
-            </AutocreatedTestPlanReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -30,10 +19,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8651E6F2C0B13D600679D42"
-               BuildableName = "API_iOSTests.xctest"
-               BlueprintName = "API_iOSTests"
-               ReferencedContainer = "container:API-iOS.xcodeproj">
+               BlueprintIdentifier = "95388B392D12ECC800B4481E"
+               BuildableName = "api-iosTests.xctest"
+               BlueprintName = "api-iosTests"
+               ReferencedContainer = "container:api-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,15 +44,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C8651E6F2C0B13D600679D42"
-            BuildableName = "API_iOSTests.xctest"
-            BlueprintName = "API_iOSTests"
-            ReferencedContainer = "container:API-iOS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
